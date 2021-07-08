@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mi sitio web</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&amp;family=Ultra&amp;display=swap"
+        rel="stylesheet">
+    <!-- AnimateCSS for WowJS -->
+    <link rel="stylesheet" href="lib/wowjs/animate.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Proyectos.html">Proyectos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="Blog.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <section id="contacto" class="container">
+        <h1>Contacto</h1>
+
+        <div class="card text-center col-12 col-sm-10 m-auto">
+            <div class="card-body">
+                <h5 class="card-title">Dejame un mensaje y en breve vamos a estar en contacto!</h5>
+                <form action="submit">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <div class="multi-input">
+                            <input type="text" class="form-control w-50 mr-1" placeholder="ejemplo: Juana">
+                            <input type="email" class="form-control w-50 ml-1" placeholder="ejemplo: Pérez">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="celular">Celular</label>
+                        <input type="number" class="form-control" placeholder="ejemplo: 1567503087">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="celular">Email</label>
+                        <input type="email" class="form-control" placeholder="ejemplo: rosa.diaz@email.com">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="motivo">Motivo de contacto</label>
+                        <select name="motivos" id="motivo" class="form-control">
+                            <option value="">--Seleccionar opción--</option>
+                            <option value="1">Oferta Laboral</option>
+                            <option value="2">Oferta Académica</option>
+                            <option value="3">Consulta de presupuesto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea type="textarea" class="form-control" placeholder="Escribe tu mensaje"></textarea>
+                    
+                    </div>
+
+
+                    <div class="form-footer">
+                        <div class="form-group newsletter">
+                            <label for="newsletter"> Si, deseo suscribirme al newsletter para recibir novedades</label>
+                            <input class="checkbox" type="checkbox">
+                        </div>
+                        <div class="button-container">
+
+                            <input class="button primary" type="submit" value="Enviar">
+                            <input class="button secondary" type="button" data-toggle="modal"
+                                data-target="#exampleModal" value="Resetear formulario">
+
+                        </div>
+                    </div>
+
+                    <!--Popup de confirmacion de eliminar el form-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Eliminar formulario</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>¿Estás seguro de que deseas eliminar el contenido del formulario?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button primary" type="reset">Si, eliminar</button>
+                                    <button type="button" class="button secondary"
+                                        data-dismiss="modal">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer__top">
+            <div class="grid__space"></div>
+            <a href="#" class="footer__link" id="lkdn">
+                <span class="lkdn">
+                    <img src="img/lkdn.png" alt="Linkedin">
+                </span>
+            </a>
+
+            <a href="#" class="footer__top__link" id="git">
+                <span class="git">
+                    <img src="img/git.png" alt="Linkedin">
+                </span>
+            </a>
+
+            <a href="#" class="footer__top__link--highlighted" id="bh">
+                <span class="bh">
+                    <img src="img/bh.png" alt="Linkedin">
+                </span>
+            </a>
+
+            <a href="#" class="footer__top__link" id="ggl">
+                <span class="ggl">
+                    <img src="img/ggl.png" alt="Linkedin">
+                </span>
+            </a>
+
+            <div class="grid__space"></div>
+        </div>
+        <div class="footer__bottom">
+            <span>2021. Todos los derechos reservados</span>
+        </div>
+    </footer>
+
+
+
+
+    <!--Boostrap dependencies-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!--Wow js-->
+    <script src="lib/wowjs/wow.min.js"></script>
+    <!--Wow initialiter-->
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
